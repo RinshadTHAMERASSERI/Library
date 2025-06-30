@@ -1,0 +1,105 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the login form */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+}
+
+/* Main container */
+.div1 {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Heading */
+.div1 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Form labels */
+label {
+  font-weight: 600;
+  color: #444;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="pass"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #1a5ed9;
+}
+
+/* Signup link */
+.div1 div {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.div1 a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.div1 a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 480px) {
+  .div1 {
+    padding: 25px 20px;
+    max-width: 90%;
+  }
+
+  .div1 h3 {
+    font-size: 1rem;
+  }
+
+  input[type="submit"] {
+    font-size: 0.95rem;
+  }
+}
