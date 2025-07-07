@@ -9,19 +9,21 @@
 <body>
    <div class="div1 ">
     <h1>Edit Your Book</h1>
-       <form action="/submit" method="post" id="form" class="form1">
-  <label for="Book">Book:</label  >
-  <input type="text" id="book" name="Book" required><br><br>
+      <!-- ✨ HTML (make sure this is in your edit page) -->
+<form id="editForm">
+  <input type="text"  id="book"  required />
+  <input type="text"  id="aut"   required />
+  <input type="number" id="prc"  required />
+  <input type="text"  id="ctgry" required />
 
-  <label for="Author">Author:</label>
-  <input type="Author" id="aut" name="Author" required><br><br>
-  <label for="Price">Price</label>
-  <input type="text" name="prc" id="prc" required><br><br>
-  <label for="Catogery"> Catogery</label>
-  <input type="catogery" name="ctgry" id="ctgry" required><br><br>
+  <!-- existing image preview -->
+  <img id="preview" src="" alt="Book image" width="120"><br>
 
+  <!-- optional new image -->
+  <input type="file" id="pic" accept="image/*"><br><br>
 
-  <button type="submit" onclick="handleSave()">Submit</button>
+  <button type="submit">Update</button>
+  <button type="button" id="cancelBtn">Cancel</button>
 </form>
 
     </div>

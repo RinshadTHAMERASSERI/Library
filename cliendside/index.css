@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  /* font-family: 'Segoe UI', sans-serif; */
 }
 
 body {
@@ -66,7 +66,7 @@ nav {
   background-color: #e3f0ff;
 }
 
-/* Form Card */
+
 form {
   background-color: #fff;
   padding: 2rem;
@@ -77,12 +77,13 @@ form {
   width: 100%;
 }
 
-/* Form Elements */
+
 form label {
   display: block;
   margin-bottom: 0.4rem;
   font-weight: 600;
   color: #333;
+  margin-left: 20%;
 }
 
 form input[type="text"] {
@@ -126,7 +127,7 @@ form input[type="text"]:focus {
 /* Common Card Button Styles */
 .card-botton,
 .card-botton2 {
-  background-color: #4a90e2;
+  background-color: #4ae277;
   width: 80px;
   height: 30px;
   margin-top: 15px;
@@ -135,6 +136,7 @@ form input[type="text"]:focus {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: 10%;
 }
 
 .card-botton {
@@ -202,4 +204,9 @@ form input[type="text"]:focus {
   .card-botton2 {
     width: 80%;
   }
+}
+.divimg1{
+ width:200px;
+ height: 200px;
+ margin-left: 5%;
 }

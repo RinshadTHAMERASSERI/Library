@@ -50,6 +50,8 @@ async function getBook() {
         str += `
 
          <form action="#" method="getbook">
+                <div class="divimg1"><img src=${dt.pic} alt="image" class="divimg1"></div>
+         
                 <label for="Book"><strong>Book  :</strong> ${dt.book}</label>
                  
                 <label for="Author"><strong>Author  :</strong>${dt.author}</label>
