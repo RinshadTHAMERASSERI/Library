@@ -16,7 +16,14 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 // Serve static files from 'cliendside' folder
-app.use(express.static(path.resolve(__dirname, 'cliendside')));
+// Serve static files (HTML, CSS, JS)
+app.use(express.static(path.resolve(__dirname, '../cliendside')));
+
+// Send index.html for root path
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../cliendside', 'index.html'));
+});
+
 
 // Parse JSON with large payloads
 app.use(express.json({ limit: '50mb' }));
@@ -31,7 +38,7 @@ app.get('/', (req, res) => {
 
 // Connect to DB and start server
 Connection().then(() => {
-  const PORT = process.env.PORT || 3000;
+  const PORT = process.env.PORT;
   app.listen(PORT, () => {
     console.log(`Server started at http://localhost:${PORT}`);
   });
