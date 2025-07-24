@@ -7,6 +7,7 @@ book: {type :String},
   price: {type:Number},
   catogery:{type:String}, 
   pic:{type:String},
+  rating:{type:Number}
 
 })
 export default mongoose.model.user||mongoose.model('book',bookSchema)

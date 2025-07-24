@@ -8,7 +8,7 @@ const { sign } = pkg
 export async function adduser(req, res) {
     console.log(req, res);
 
-    const { name, email, pass, cpass } = req.body
+    const { name, email, pass, cpass,pic } = req.body
     if (!(name&&email&&pass&&cpass))
 
         return res.status(500).send({ msg:"invalid input" })
