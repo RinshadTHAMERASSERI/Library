@@ -1,10 +1,18 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config(); // Load environment variables
+
 export default async function connection() {
-    
-
-
-    const db =await mongoose.connect('mongodb://127.0.0.1:27017/Authenticaton')
-    console.log("database connected");
-    
-    return db
+    try {
+        const db = await mongoose.connect(process.env.MONGO_URL, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
+        console.log("✅ Database connected");
+        return db;
+    } catch (error) {
+        console.error("❌ Database connection error:", error);
+        throw error;
+    }
 }
